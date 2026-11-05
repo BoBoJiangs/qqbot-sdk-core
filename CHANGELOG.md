@@ -1,5 +1,10 @@
 # 更新记录
 
+## 0.1.1
+
+- 修复 JitPack 默认 Maven 版本过旧导致的构建失败，增加 Maven Wrapper 并固定 Maven 3.9.11。
+- CI 和发布使用相同 Wrapper，在 JDK 17/21 上验证。
+
 ## 0.1.0
 
 - 从 qqbot-official 提取独立 Java 17 SDK，保留 `top.sshh.qqbot.sdk` 包名。

@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.BoBoJiangs</groupId>
     <artifactId>qqbot-sdk-core</artifactId>
-    <version>0.1.0</version>
+    <version>0.1.1</version>
     <name>QQ Bot Java SDK</name>
     <description>Framework-independent Java 17 client for the QQ Bot Open Platform</description>
     <url>https://github.com/BoBoJiangs/qqbot-sdk-core</url>
@@ -13,7 +13,7 @@
         <connection>scm:git:https://github.com/BoBoJiangs/qqbot-sdk-core.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/BoBoJiangs/qqbot-sdk-core.git</developerConnection>
         <url>https://github.com/BoBoJiangs/qqbot-sdk-core</url>
-        <tag>0.1.0</tag>
+        <tag>0.1.1</tag>
     </scm>
     <developers>
         <developer><id>BoBoJiangs</id><name>BoBoJiangs</name><url>https://github.com/BoBoJiangs</url></developer>

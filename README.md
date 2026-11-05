@@ -8,7 +8,7 @@
 
 ## 构建与依赖
 
-要求 JDK 17+、Maven 3.9+。发布仓库为 [JitPack](https://jitpack.io/#BoBoJiangs/qqbot-sdk-core)，在使用方的 `pom.xml` 中添加：
+要求 JDK 17+。仓库内 Maven Wrapper 固定使用 Maven 3.9.11；Windows 下将 `./mvnw` 替换为 `.\mvnw.cmd`。发布仓库为 [JitPack](https://jitpack.io/#BoBoJiangs/qqbot-sdk-core)，在使用方的 `pom.xml` 中添加：
 
 ```xml
 <repositories>
@@ -23,14 +23,14 @@
 <dependency>
     <groupId>com.github.BoBoJiangs</groupId>
     <artifactId>qqbot-sdk-core</artifactId>
-    <version>0.1.0</version>
+    <version>0.1.1</version>
 </dependency>
 </dependencies>
 ```
 
 Java 包名仍为 `top.sshh.qqbot.sdk`。SDK 运行依赖仅为 JDK、fastjson2 和 SLF4J API，应用按需选择日志实现。此仓库独立构建，无需下载机器人业务项目；源码来自 [qqbot-official](https://github.com/BoBoJiangs/qqbot-official)。
 
-从源码安装到本地 Maven 仓库：`mvn -B -ntp clean install`。产物为 `target/qqbot-sdk-core-0.1.0.jar`，同时生成 `-sources.jar` 和 `-javadoc.jar`。
+从源码安装到本地 Maven 仓库：`./mvnw -B -ntp clean install`。产物为 `target/qqbot-sdk-core-0.1.1.jar`，同时生成 `-sources.jar` 和 `-javadoc.jar`。
 
 ## 收发消息
 
@@ -112,7 +112,7 @@ Webhook 与 WebSocket 使用同一组事件监听器。Webhook 无需调用 `bot
 ```shell
 python -B scripts/sync_qq_sdk_catalog.py --check
 python -B -m unittest discover -s tests
-mvn -B -ntp clean verify dependency:build-classpath "-Dmdep.includeScope=runtime" "-Dmdep.outputFile=target/classpath.txt"
+./mvnw -B -ntp clean verify dependency:build-classpath "-Dmdep.includeScope=runtime" "-Dmdep.outputFile=target/classpath.txt"
 python -B scripts/verify_release.py
 ```
 

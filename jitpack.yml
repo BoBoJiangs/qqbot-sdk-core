@@ -1,4 +1,4 @@
 jdk:
   - openjdk17
 install:
-  - mvn -B -ntp clean install
+  - ./mvnw -B -ntp clean install

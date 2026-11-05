@@ -22,5 +22,5 @@ jobs:
           python-version: '3.12'
       - run: python -B scripts/sync_qq_sdk_catalog.py --check
       - run: python -B -m unittest discover -s tests
-      - run: mvn -B -ntp clean verify dependency:build-classpath -Dmdep.includeScope=runtime -Dmdep.outputFile=target/classpath.txt
+      - run: ./mvnw -B -ntp clean verify dependency:build-classpath -Dmdep.includeScope=runtime -Dmdep.outputFile=target/classpath.txt
       - run: python -B scripts/verify_release.py

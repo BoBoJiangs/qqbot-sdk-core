@@ -28,9 +28,16 @@ class DistributionTest(unittest.TestCase):
     def test_jitpack_builds_with_java_17_and_runs_tests(self):
         config = (ROOT / "jitpack.yml").read_text(encoding="utf-8")
         self.assertIn("openjdk17", config)
-        self.assertRegex(config, r"mvn .*clean install")
+        self.assertRegex(config, r"\./mvnw .*clean install")
         self.assertNotIn("skipTests", config)
         self.assertNotIn("maven.test.skip", config)
+
+    def test_maven_wrapper_bootstraps_a_known_version_on_both_platforms(self):
+        properties = (ROOT / ".mvn/wrapper/maven-wrapper.properties").read_text(encoding="utf-8")
+        self.assertIn("distributionUrl=https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/3.9.11/apache-maven-3.9.11-bin.zip", properties)
+        self.assertTrue((ROOT / "mvnw").is_file())
+        self.assertTrue((ROOT / "mvnw.cmd").is_file())
+        self.assertIn("./mvnw -B", (ROOT / ".github/workflows/verify.yml").read_text(encoding="utf-8"))
 
     def test_readme_coordinates_match_published_pom(self):
         pom = ET.parse(ROOT / "pom.xml").getroot()
