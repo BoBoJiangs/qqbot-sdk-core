@@ -1,0 +1,14 @@
+{
+  "reviewedOn": "2026-11-05",
+  "references": [
+    {"repository": "https://github.com/tencent-connect/qqbot-nodejs", "commit": "429a0f1b798f3b0fcef3679e207dbc0469a1df2d", "usedFor": ["transport layout", "gateway close classification", "Webhook Ed25519", "media upload"]},
+    {"repository": "https://github.com/tencent-connect/qqbot-agent-sdk", "commit": "6163b5dc979a2f12379b1916805009075008c3c3", "usedFor": ["host callback isolation", "gateway lifecycle"]},
+    {"repository": "https://github.com/tencent-connect/botgo", "commit": "fe31c0dfe469001e0f783d2f07e7de7bd08b403f", "usedFor": ["concurrent token refresh coalescing", "numeric business errors"]}
+  ],
+  "protocolAuthority": "https://bot.q.qq.com/wiki/develop/api-v2/",
+  "webhookVector": {
+    "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/interface-framework/sign.html",
+    "note": "The published secret/public-key pair matches Node and Java. The signature printed in the page does not match the stated timestamp and exact body. WebhookTest checks the published public key against an independently calculated Node signature instead.",
+    "nodeVerifiedSignature": "2eb9983ebb8bb209e78fd095942f58e442656656e7975d01e64f9023a84b7c964290fdd40e5500c33867ccfe9563b7e0b6bac0e1d42c13e787b304fd51f71102"
+  }
+}

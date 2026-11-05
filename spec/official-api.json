@@ -1,0 +1,1005 @@
+{
+  "source": "https://qq-ai.cdn-go.cn/web/bot-docs/-/v1.47.0/assets/js/app.473f85e7.js",
+  "snapshotDate": "2026-11-05",
+  "scannedPages": 192,
+  "endpoints": [
+    {
+      "method": "DELETE",
+      "path": "/channels/{channel_id}",
+      "title": "删除子频道",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/channels_channel_id.delete.html",
+      "restricted": false,
+      "sha256": "e985c999346c95ae8b564b5cdfe8f71fe2f76d3e3c6e311bbec70ce8827cae8e"
+    },
+    {
+      "method": "DELETE",
+      "path": "/channels/{channel_id}/announces/{message_id}",
+      "title": "删除子频道公告（2022年3月15日后废弃）",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/announces/delete_channel_announces.html",
+      "restricted": false,
+      "sha256": "59e921261e28a8fa920f7e876e5310fee1233e509de516f559cb66e9f91d64cc"
+    },
+    {
+      "method": "DELETE",
+      "path": "/channels/{channel_id}/messages/{message_id}",
+      "title": "撤回子频道消息",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/message/recall.html",
+      "restricted": false,
+      "sha256": "b117d9be72cc2ddc32ef388d845a0b5f21f45cdafc91b7cae8538bc95dc0d9e8"
+    },
+    {
+      "method": "DELETE",
+      "path": "/channels/{channel_id}/messages/{message_id}/reactions/{type}/{id}",
+      "title": "表情表态",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/message/trans/emoji.html",
+      "restricted": false,
+      "sha256": "516e125ab880f02792495d9d5657f3c7c64f494539d292ec79a49a51725c81ac"
+    },
+    {
+      "method": "DELETE",
+      "path": "/channels/{channel_id}/mic",
+      "title": "机器人下麦",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/audio/delete_mic.html",
+      "restricted": false,
+      "sha256": "0de22da030ac2f9e372da61bb8eb133066412f6ff3c183fe5390746ce8d7bd4f"
+    },
+    {
+      "method": "DELETE",
+      "path": "/channels/{channel_id}/pins/{message_id}",
+      "title": "删除精华消息",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/pins/delete_pins_message.html",
+      "restricted": false,
+      "sha256": "37130598b036cb5dacc425bb34b4efaa5d5c0fac50a14333ff6ace6181730130"
+    },
+    {
+      "method": "DELETE",
+      "path": "/channels/{channel_id}/schedules/{schedule_id}",
+      "title": "删除日程",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/schedule/delete_schedule.html",
+      "restricted": false,
+      "sha256": "84690bafededa0d7b447d62199e0efea9c5b9cc284cdcba84eeabd67c325e986"
+    },
+    {
+      "method": "DELETE",
+      "path": "/channels/{channel_id}/threads/{thread_id}",
+      "title": "删除帖子",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/forum/delete_thread.html",
+      "restricted": false,
+      "sha256": "96a1e2632d3d2bdbc1f1b7fb1553aa6c39d35146d7ecf20230b961ae8a47c552"
+    },
+    {
+      "method": "DELETE",
+      "path": "/dms/{guild_id}/messages/{message_id}",
+      "title": "频道私信",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/message/dms.html",
+      "restricted": false,
+      "sha256": "37ee201934ed9ebaed9452e9c182e17ef810578be098cc95e6fe26b1baab60ef"
+    },
+    {
+      "method": "DELETE",
+      "path": "/guilds/{guild_id}/announces/{message_id}",
+      "title": "删除频道公告",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/announces/delete_guild_announces.html",
+      "restricted": false,
+      "sha256": "9d34cb2b65a43135d5f79166522614f5495e16a917e67a06616e48ea9f2026c7"
+    },
+    {
+      "method": "DELETE",
+      "path": "/guilds/{guild_id}/members/{user_id}",
+      "title": "删除频道成员",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/openapi/member/delete_member.html",
+      "restricted": false,
+      "sha256": "f72b62625167c0f8268891a3744d659632fa1f22bd98eee0e6ffdb4bff22eaf2"
+    },
+    {
+      "method": "DELETE",
+      "path": "/guilds/{guild_id}/members/{user_id}/roles/{role_id}",
+      "title": "删除频道身份组成员",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/role-group/delete_guild_member_role.html",
+      "restricted": false,
+      "sha256": "c7bc92c59be9010b7d26c3a5104f20f59750dcc30e4ee265e346b0d7b96f2075"
+    },
+    {
+      "method": "DELETE",
+      "path": "/guilds/{guild_id}/roles/{role_id}",
+      "title": "删除频道身份组",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/role-group/delete_guild_role.html",
+      "restricted": false,
+      "sha256": "8c48837b31b49c58fb45adffb0fb4ee1a83212d4068db89d7ab8712f174aac1c"
+    },
+    {
+      "method": "DELETE",
+      "path": "/v2/groups/join_approval_strategy/{strategy_id}",
+      "title": "删除入群自动审批策略",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_join_approval_strategy_strategy_id.delete.html",
+      "restricted": false,
+      "sha256": "33ebcaf46f438baf194e2474cba069f70f432de5694d2c0c213177a9dedd2ad2"
+    },
+    {
+      "method": "DELETE",
+      "path": "/v2/groups/{group_openid}/messages/{message_id}",
+      "title": "撤回群聊消息",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_group_openid_messages_message_id.delete.html",
+      "restricted": false,
+      "sha256": "4bda23b5301588ad70529acb8bc615ba364b402c4f0ec973a46698402c2117a7"
+    },
+    {
+      "method": "DELETE",
+      "path": "/v2/media-images/{image_id}/delete",
+      "title": "素材管理",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/message/material-management.html",
+      "restricted": false,
+      "sha256": "52625e9a733f129cf4f6519b78a2aa6e51cceaca120939de155c7945e06a5bf0"
+    },
+    {
+      "method": "DELETE",
+      "path": "/v2/panels/{panel_id}",
+      "title": "删除指令面板",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_panels_panel_id.delete.html",
+      "restricted": false,
+      "sha256": "f36fd3d37529dd8a1d359503ce347fe226abba381af70a9d7eae83170b354ef3"
+    },
+    {
+      "method": "DELETE",
+      "path": "/v2/users/{user_openid}/messages/{message_id}",
+      "title": "撤回单聊消息",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_users_user_openid_messages_message_id.delete.html",
+      "restricted": false,
+      "sha256": "a9539638d2dd0c75254279420092148a45af2d8f8504d17929ebc1ab5beba2b9"
+    },
+    {
+      "method": "GET",
+      "path": "/channels/{channel_id}",
+      "title": "获取子频道详情",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/channels_channel_id.get.html",
+      "restricted": false,
+      "sha256": "fac27fbb12f838ec13eb7665ec117ff794e9bb0d3c4ecff5e913060f8b276295"
+    },
+    {
+      "method": "GET",
+      "path": "/channels/{channel_id}/members/{user_id}/permissions",
+      "title": "获取子频道用户权限",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/role-group/channel_permissions/get_channel_permissions.html",
+      "restricted": false,
+      "sha256": "f17e5e8d3db579aa4e686eebb8056eb56ce80f5fd58c86db485b7913c9dd2a9d"
+    },
+    {
+      "method": "GET",
+      "path": "/channels/{channel_id}/messages/{message_id}/reactions/{type}/{id}",
+      "title": "表情表态",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/message/trans/emoji.html",
+      "restricted": false,
+      "sha256": "516e125ab880f02792495d9d5657f3c7c64f494539d292ec79a49a51725c81ac"
+    },
+    {
+      "method": "GET",
+      "path": "/channels/{channel_id}/online_nums",
+      "title": "获取子频道在线成员数",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/role/get_online_nums.html",
+      "restricted": false,
+      "sha256": "53559c1e57fab7affd9f4749edc5995291aa1c52a5458a6b3397ad5e34370b53"
+    },
+    {
+      "method": "GET",
+      "path": "/channels/{channel_id}/pins",
+      "title": "获取精华消息",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/pins/get_pins_message.html",
+      "restricted": false,
+      "sha256": "5d1b051b2f8b7399c5eb93c6998358e1138e3cd8deaf063855e4e03303e14228"
+    },
+    {
+      "method": "GET",
+      "path": "/channels/{channel_id}/roles/{role_id}/permissions",
+      "title": "获取子频道身份组权限",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/role-group/channel_permissions/get_channel_roles_permissions.html",
+      "restricted": false,
+      "sha256": "ba658712df3fddadb0c97cf2e5f646d217b01c05e9acc87b4310f22f9cd12c02"
+    },
+    {
+      "method": "GET",
+      "path": "/channels/{channel_id}/schedules",
+      "title": "获取频道日程列表",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/schedule/get_schedules.html",
+      "restricted": false,
+      "sha256": "4848900f545a4b26fb4698575f0ebbe0c16d3c9d85e6f27f0bd757e3eb01dde2"
+    },
+    {
+      "method": "GET",
+      "path": "/channels/{channel_id}/schedules/{schedule_id}",
+      "title": "获取日程详情",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/schedule/get_schedule.html",
+      "restricted": false,
+      "sha256": "bd530f3b35396071b60e9afdce330a7e65b730b233ccb891ce5c6397ccde75b5"
+    },
+    {
+      "method": "GET",
+      "path": "/channels/{channel_id}/threads",
+      "title": "获取帖子列表",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/forum/get_threads_list.html",
+      "restricted": false,
+      "sha256": "af54a631713550c1cd3f378bc7ed8812ab2082f4e842a05fb9ff2bfc47a1730e"
+    },
+    {
+      "method": "GET",
+      "path": "/channels/{channel_id}/threads/{thread_id}",
+      "title": "获取帖子详情",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/forum/get_thread.html",
+      "restricted": false,
+      "sha256": "cd843b56d28fd0e7c514769e5c9384d8b045cb19a8d236628f5b647093572545"
+    },
+    {
+      "method": "GET",
+      "path": "/gateway",
+      "title": "获取通用 WSS 接入点",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/gateway.get.html",
+      "restricted": false,
+      "sha256": "1cdf3d0000075da3a62ba307b361daa334f27b9e8513e02564b0fd07d71e63df"
+    },
+    {
+      "method": "GET",
+      "path": "/gateway/bot",
+      "title": "获取带分片 WSS 接入点",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/openapi/wss/shard_url_get.html",
+      "restricted": false,
+      "sha256": "fe45223806e3ab068bad72707dcf08c5a3b9c9c07b614f2b0a018d16059e4078"
+    },
+    {
+      "method": "GET",
+      "path": "/guilds/{guild_id}",
+      "title": "获取频道详情",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/guilds_guild_id.get.html",
+      "restricted": false,
+      "sha256": "68a7466682997ec182aad880b31c4417377b3a6d72cd1ac00f9ffe7fe9a4a826"
+    },
+    {
+      "method": "GET",
+      "path": "/guilds/{guild_id}/api_permission",
+      "title": "获取机器人在频道可用权限列表",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/api_permissions/get_guild_api_permission.html",
+      "restricted": false,
+      "sha256": "eee667a56061f7b302a753429185ad9041158f6008be4f403a4fbe305e8717fd"
+    },
+    {
+      "method": "GET",
+      "path": "/guilds/{guild_id}/channels",
+      "title": "获取子频道列表",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/guilds_guild_id_channels.get.html",
+      "restricted": false,
+      "sha256": "06b702f446ce9ef1fb5198708fb69ae0161af3d6929d2a724a1cead9569a4aa2"
+    },
+    {
+      "method": "GET",
+      "path": "/guilds/{guild_id}/members",
+      "title": "获取频道成员列表",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/openapi/member/get_members.html",
+      "restricted": false,
+      "sha256": "153cf1010e19304fc1dedf6cfdde5142730414212616fbb22623aea4232d6961"
+    },
+    {
+      "method": "GET",
+      "path": "/guilds/{guild_id}/members/{user_id}",
+      "title": "获取成员详情",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/openapi/member/get_member.html",
+      "restricted": false,
+      "sha256": "d20289927794d05c3d8d4c1ff82481987400e927ccef9bdd7a59e1024b471453"
+    },
+    {
+      "method": "GET",
+      "path": "/guilds/{guild_id}/message/setting",
+      "title": "获取频道消息频率的设置详情",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/speak/setting/message_setting.html",
+      "restricted": false,
+      "sha256": "a1c93f5bde29213ea0b5e2efeda5c89156637d85c59edcbef1dd88700c138955"
+    },
+    {
+      "method": "GET",
+      "path": "/guilds/{guild_id}/roles",
+      "title": "获取频道身份组列表",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/role-group/get_guild_roles.html",
+      "restricted": false,
+      "sha256": "045d65aa256d49e63ec5567918721e98b228f05556ffee5af5a8b95ccb207597"
+    },
+    {
+      "method": "GET",
+      "path": "/guilds/{guild_id}/roles/{role_id}/members",
+      "title": "获取频道身份组成员列表",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/role/member/get_role_members.html",
+      "restricted": false,
+      "sha256": "7a414a0547d4053e52dfebeb9ae089535e7acfe7c20f0cb46606e1a30fb33319"
+    },
+    {
+      "method": "GET",
+      "path": "/users/@me",
+      "title": "获取机器人详情",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/users_me.get.html",
+      "restricted": false,
+      "sha256": "fbe25f9b41f4f884a5777efaf705a185f6872fffac17ba3f5d117ba629e0b7a2"
+    },
+    {
+      "method": "GET",
+      "path": "/users/@me/guilds",
+      "title": "获取机器人频道列表",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/users_me_guilds.get.html",
+      "restricted": false,
+      "sha256": "7c2a2d9ccd810f6fa136081cdfdc63d2b9a8b973c9765265cb80cdca556afe4e"
+    },
+    {
+      "method": "GET",
+      "path": "/v2/groups/join_approval_strategy",
+      "title": "查询入群自动审批策略列表",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_join_approval_strategy.get.html",
+      "restricted": false,
+      "sha256": "e4765ea4e09d4f67caf67596a68240ae60163ac181f69dcfab616bf6c2fafdfa"
+    },
+    {
+      "method": "GET",
+      "path": "/v2/groups/{group_openid}/bot_state",
+      "title": "获取机器人群内状态",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_group_openid_bot_state.get.html",
+      "restricted": false,
+      "sha256": "6d2cb68dad48dc65e769c86bc7f21dca2d9be1b56fdb9c187e60accdc386a127"
+    },
+    {
+      "method": "GET",
+      "path": "/v2/groups/{group_openid}/info",
+      "title": "获取群基本信息",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_group_openid_info.get.html",
+      "restricted": false,
+      "sha256": "064c46e5c488030e5bc8de8672e08e329784e1714667500bb7e2129844a1ef15"
+    },
+    {
+      "method": "GET",
+      "path": "/v2/groups/{group_openid}/join_request_list",
+      "title": "入群申请列表拉取",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_group_openid_join_request_list.get.html",
+      "restricted": false,
+      "sha256": "88bacee3bd4e201b3c371f4cd5dff77aca36ec227b409a8a35e2c02385cd738f"
+    },
+    {
+      "method": "GET",
+      "path": "/v2/groups/{group_openid}/member_blacklist",
+      "title": "群黑名单查询",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_group_openid_member_blacklist.get.html",
+      "restricted": true,
+      "sha256": "42c075ae7ab738591256d797f65ed6643e915f4da1297426300d963dfb039bab"
+    },
+    {
+      "method": "GET",
+      "path": "/v2/groups/{group_openid}/members",
+      "title": "获取群成员列表",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_group_openid_members.get.html",
+      "restricted": true,
+      "sha256": "9248b9ffe04de0c7c93bbd6f30623e63f3d28996a22b396c7d3f0cdf8a5505f9"
+    },
+    {
+      "method": "GET",
+      "path": "/v2/groups/{group_openid}/members/{member_openid}",
+      "title": "获取群成员信息",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_group_openid_members_member_openid.get.html",
+      "restricted": true,
+      "sha256": "87377ad104ee97684d26c5879e879f529b61eb6a185d498deab2de32e5b7757d"
+    },
+    {
+      "method": "GET",
+      "path": "/v2/groups/{group_openid}/restrict_chat_setting",
+      "title": "查询群禁言状态",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_group_openid_restrict_chat_setting.get.html",
+      "restricted": false,
+      "sha256": "b822a5c2c3cac72776311a1c941efeb270c2226e03e5f87c778a00e9b027f2f3"
+    },
+    {
+      "method": "GET",
+      "path": "/v2/media-images",
+      "title": "素材管理",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/message/material-management.html",
+      "restricted": false,
+      "sha256": "52625e9a733f129cf4f6519b78a2aa6e51cceaca120939de155c7945e06a5bf0"
+    },
+    {
+      "method": "GET",
+      "path": "/v2/menu",
+      "title": "查询全局自定义菜单",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_menu.get.html",
+      "restricted": false,
+      "sha256": "bf690aa32418d0da96f3d7d5c7c0781368b8a5304259b3263cb3ff2fc6047fdb"
+    },
+    {
+      "method": "GET",
+      "path": "/v2/panels",
+      "title": "查询指令面板列表",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_panels.get.html",
+      "restricted": false,
+      "sha256": "9ca0fea8dfa5f74108fb3311a06a48430603b49580da71ff406bc9f615059131"
+    },
+    {
+      "method": "GET",
+      "path": "/v2/panels/{panel_id}",
+      "title": "查询指令面板详情",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_panels_panel_id.get.html",
+      "restricted": false,
+      "sha256": "2ff5ec9a95d8261d4499ccd89f00200812d8bf7c48ce59916d6e900dd7c74175"
+    },
+    {
+      "method": "PATCH",
+      "path": "/channels/{channel_id}",
+      "title": "修改子频道",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/channels_channel_id.patch.html",
+      "restricted": false,
+      "sha256": "de04d2e6d9e2a716b4a7c81b948c010e34001243eeb1d8e668a2a789dc5b2cf6"
+    },
+    {
+      "method": "PATCH",
+      "path": "/channels/{channel_id}/schedules/{schedule_id}",
+      "title": "修改日程",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/schedule/patch_schedule.html",
+      "restricted": false,
+      "sha256": "1a262e01fd84398e9682974544f696e8fb27f97078e88a7d2cdd06d55038e078"
+    },
+    {
+      "method": "PATCH",
+      "path": "/guilds/{guild_id}/members/{user_id}/mute",
+      "title": "频道指定成员禁言",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/speak/patch_guild_member_mute.html",
+      "restricted": false,
+      "sha256": "4b2c2809c94080b7c5edfef98c98d1b20e44687864fe8746a9cdbe931051d549"
+    },
+    {
+      "method": "PATCH",
+      "path": "/guilds/{guild_id}/mute",
+      "title": "频道全员禁言",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/speak/patch_guild_mute.html",
+      "restricted": false,
+      "sha256": "9b0f2f1b9619ba1aa1bf978c11d6aa750f3bca3fbb10c19750952464bd51fd1e"
+    },
+    {
+      "method": "PATCH",
+      "path": "/guilds/{guild_id}/roles/{role_id}",
+      "title": "修改频道身份组",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/role-group/patch_guild_role.html",
+      "restricted": false,
+      "sha256": "092faaddeb062cf0402d7854750933d7b8ccb06a395944651a7f5353bb69eb26"
+    },
+    {
+      "method": "PATCH",
+      "path": "/v2/groups/join_approval_strategy/{strategy_id}",
+      "title": "修改入群自动审批策略",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_join_approval_strategy_strategy_id.patch.html",
+      "restricted": false,
+      "sha256": "ccb5a2bf8f333946d028d7319663dfa988ad7b0219e6ddbf6f1cf0f73c3bacd2"
+    },
+    {
+      "method": "POST",
+      "path": "/app/getAppAccessToken",
+      "title": "获取访问凭证",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/access-token.html",
+      "restricted": false,
+      "sha256": "6c9a569802ac85ed9e966720fbdcec381484c42ebca0efac4a784bc9ea348594"
+    },
+    {
+      "method": "POST",
+      "path": "/channels/{channel_id}/announces",
+      "title": "创建子频道公告（2022年3月15日后废弃）",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/announces/post_channel_announces.html",
+      "restricted": false,
+      "sha256": "8675ab6a3172c04b04df10e68065e0970eca8a10d810ba9ce6bfd4431884f220"
+    },
+    {
+      "method": "POST",
+      "path": "/channels/{channel_id}/audio",
+      "title": "音频控制",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/audio/audio_control.html",
+      "restricted": false,
+      "sha256": "0d151dc785bde7658cd3912eebf4832f8010f4580ee7a6f37dc96a989c4c8f80"
+    },
+    {
+      "method": "POST",
+      "path": "/channels/{channel_id}/messages",
+      "title": "发送子频道消息",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/message/send.html",
+      "restricted": false,
+      "sha256": "c14d9fe6f2890954e428b1ea99aa4e76a83ab1c932064bd574ea2b5202ca6736"
+    },
+    {
+      "method": "POST",
+      "path": "/channels/{channel_id}/schedules",
+      "title": "创建日程",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/schedule/post_schedule.html",
+      "restricted": false,
+      "sha256": "3d30f20b7ff78de6605269fa32d9e492ef275aea5c9ad50c742c6d2d0cd229c8"
+    },
+    {
+      "method": "POST",
+      "path": "/dms/{guild_id}/messages",
+      "title": "频道私信",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/message/dms.html",
+      "restricted": false,
+      "sha256": "37ee201934ed9ebaed9452e9c182e17ef810578be098cc95e6fe26b1baab60ef"
+    },
+    {
+      "method": "POST",
+      "path": "/guilds/{guild_id}/announces",
+      "title": "创建频道公告",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/announces/post_guild_announces.html",
+      "restricted": false,
+      "sha256": "84441d145691cc84d6f90adcb2f96cf2afd098947dde4d7358b9fbd49206ea05"
+    },
+    {
+      "method": "POST",
+      "path": "/guilds/{guild_id}/api_permission/demand",
+      "title": "发送机器人在频道接口权限的授权链接",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/api_permissions/post_api_permission_demand.html",
+      "restricted": false,
+      "sha256": "36d95248054acff363f951727741b6b27db9ec0a73e9693a1d48c69ee0b38f8d"
+    },
+    {
+      "method": "POST",
+      "path": "/guilds/{guild_id}/channels",
+      "title": "创建子频道",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/guilds_guild_id_channels.post.html",
+      "restricted": false,
+      "sha256": "cc392a9cf275de7990a9cca7bb524b51a39dbe97a55c66bdc210400410a36663"
+    },
+    {
+      "method": "POST",
+      "path": "/guilds/{guild_id}/roles",
+      "title": "创建频道身份组",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/role-group/post_guild_role.html",
+      "restricted": false,
+      "sha256": "d82e250ef3c4677121155f07aa90a449445169ef395ef30dfa26cf2ee80ccc5b"
+    },
+    {
+      "method": "POST",
+      "path": "/users/@me/dms",
+      "title": "频道私信",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/message/dms.html",
+      "restricted": false,
+      "sha256": "37ee201934ed9ebaed9452e9c182e17ef810578be098cc95e6fe26b1baab60ef"
+    },
+    {
+      "method": "POST",
+      "path": "/v2/generate_url_link",
+      "title": "生成分享链接",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_generate_url_link.post.html",
+      "restricted": false,
+      "sha256": "fe4ec7cd6732cd62749b9e349d9eaefe3e72c4d812cd6b3dd52b513bfa351844"
+    },
+    {
+      "method": "POST",
+      "path": "/v2/groups/join_approval_strategy",
+      "title": "创建入群自动审批策略",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_join_approval_strategy.post.html",
+      "restricted": false,
+      "sha256": "c31463efb9697ae6d52d5993b4bb12e3935f88d2032e6aabcdc53a3f63a300b4"
+    },
+    {
+      "method": "POST",
+      "path": "/v2/groups/join_approval_strategy/{strategy_id}/execute",
+      "title": "执行入群自动审批策略",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_join_approval_strategy_strategy_id_execute.post.html",
+      "restricted": false,
+      "sha256": "43ab6b0235257e34f168ae015fba9757b432d9d7d9682431a04ef8e247053c95"
+    },
+    {
+      "method": "POST",
+      "path": "/v2/groups/join_approval_strategy/{strategy_id}/whitelist_users",
+      "title": "修改入群自动审批策略的白名单号码",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_join_approval_strategy_strategy_id_whitelist_users.post.html",
+      "restricted": false,
+      "sha256": "92eda9a08d4889a9460f79d080018eaae1dfae97f967fd0b0386d2fa2f7e0e42"
+    },
+    {
+      "method": "POST",
+      "path": "/v2/groups/{group_id}/upload_part_finish",
+      "title": "群聊分片上传完成",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_group_id_upload_part_finish.post.html",
+      "restricted": false,
+      "sha256": "0cc50455a445767a9cdd162969609f785158b2803f859b24cdad4f4876e57a6c"
+    },
+    {
+      "method": "POST",
+      "path": "/v2/groups/{group_id}/upload_prepare",
+      "title": "群聊富媒体预上传",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_group_id_upload_prepare.post.html",
+      "restricted": false,
+      "sha256": "bf11c9c67efcd48a85f7e82233400553464960e0c8b9a8efc19ec7e93a1fae66"
+    },
+    {
+      "method": "POST",
+      "path": "/v2/groups/{group_openid}/approval_join_request/{member_openid}",
+      "title": "入群申请审批",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_group_openid_approval_join_request_member_openid.post.html",
+      "restricted": false,
+      "sha256": "13cbec59d68dd686897dbe4534dc7653a0bafb71e20cc4396d43da0e445091dc"
+    },
+    {
+      "method": "POST",
+      "path": "/v2/groups/{group_openid}/batch_remove_members",
+      "title": "群成员批量移除",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_group_openid_batch_remove_members.post.html",
+      "restricted": true,
+      "sha256": "afd915c51398ec0ba85824b365889e034783438eb58f3609674851ae2f59727c"
+    },
+    {
+      "method": "POST",
+      "path": "/v2/groups/{group_openid}/files",
+      "title": "群聊富媒体上传",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_group_openid_files.post.html",
+      "restricted": false,
+      "sha256": "1c4b1230b7458005d058404902e2492b4f565ce6283bc8e3c268aa5955bdb690"
+    },
+    {
+      "method": "POST",
+      "path": "/v2/groups/{group_openid}/member_blacklist",
+      "title": "群黑名单操作",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_group_openid_member_blacklist.post.html",
+      "restricted": true,
+      "sha256": "6393cd98b55e9756a4f27e4e8b270f424894b4fe48697daefc0582f9d185f7c1"
+    },
+    {
+      "method": "POST",
+      "path": "/v2/groups/{group_openid}/messages",
+      "title": "发送群聊消息",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_group_openid_messages.post.html",
+      "restricted": false,
+      "sha256": "8333cd812a12d872da2a578e975251750aec1f51cf01d60f46626c06627f7faa"
+    },
+    {
+      "method": "POST",
+      "path": "/v2/groups/{group_openid}/restrict_chat_setting",
+      "title": "设置群成员禁言",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_group_openid_restrict_chat_setting.post.html",
+      "restricted": false,
+      "sha256": "7386172acdf369525952e0c5dfdafd6e619b66bffa905335285e6f6cf00216ab"
+    },
+    {
+      "method": "POST",
+      "path": "/v2/media-images/complete",
+      "title": "素材管理",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/message/material-management.html",
+      "restricted": false,
+      "sha256": "52625e9a733f129cf4f6519b78a2aa6e51cceaca120939de155c7945e06a5bf0"
+    },
+    {
+      "method": "POST",
+      "path": "/v2/media-images/prepare",
+      "title": "素材管理",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/message/material-management.html",
+      "restricted": false,
+      "sha256": "52625e9a733f129cf4f6519b78a2aa6e51cceaca120939de155c7945e06a5bf0"
+    },
+    {
+      "method": "POST",
+      "path": "/v2/panels",
+      "title": "创建指令面板",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_panels.post.html",
+      "restricted": false,
+      "sha256": "7dfb63cbe2855a44acc8aafc3931ea9ff6b985d86cac3a3202823978134ddb48"
+    },
+    {
+      "method": "POST",
+      "path": "/v2/users/{user_id}/upload_part_finish",
+      "title": "单聊分片上传完成",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_users_user_id_upload_part_finish.post.html",
+      "restricted": false,
+      "sha256": "268d75f92e7b257139687fbe79e7a3d99c0d7c646ab1ec97d47da2034c5be581"
+    },
+    {
+      "method": "POST",
+      "path": "/v2/users/{user_id}/upload_prepare",
+      "title": "单聊富媒体预上传",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_users_user_id_upload_prepare.post.html",
+      "restricted": false,
+      "sha256": "5e8dd8b56e3ac6c07ae09eb300f5bae3be4b38e9afa6bc726cf097925c3b52c2"
+    },
+    {
+      "method": "POST",
+      "path": "/v2/users/{user_openid}/files",
+      "title": "单聊富媒体上传",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_users_user_openid_files.post.html",
+      "restricted": false,
+      "sha256": "d85a3c4c64141cda6ec8fffa865b0b650684afecad664379813754c3d85d784c"
+    },
+    {
+      "method": "POST",
+      "path": "/v2/users/{user_openid}/messages",
+      "title": "发送单聊消息",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_users_user_openid_messages.post.html",
+      "restricted": false,
+      "sha256": "ca3c232c35d59809becd722de39cdbe1dfd2ff494f68d5022b7a489b40225d43"
+    },
+    {
+      "method": "POST",
+      "path": "/v2/users/{user_openid}/stream_messages",
+      "title": "流式发送单聊消息",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_users_user_openid_stream_messages.post.html",
+      "restricted": false,
+      "sha256": "5231a8a359cd3c382c1ac79e0f8e336b019a437a95c60e2160bcdb1f07aa9c04"
+    },
+    {
+      "method": "PUT",
+      "path": "/channels/{channel_id}/members/{user_id}/permissions",
+      "title": "修改子频道用户权限",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/role-group/channel_permissions/put_channel_permissions.html",
+      "restricted": false,
+      "sha256": "055656664a35f2497be7caf807b1c0f8034b5deefbbde7680d6b17370450d8e8"
+    },
+    {
+      "method": "PUT",
+      "path": "/channels/{channel_id}/messages/{message_id}/reactions/{type}/{id}",
+      "title": "表情表态",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/message/trans/emoji.html",
+      "restricted": false,
+      "sha256": "516e125ab880f02792495d9d5657f3c7c64f494539d292ec79a49a51725c81ac"
+    },
+    {
+      "method": "PUT",
+      "path": "/channels/{channel_id}/mic",
+      "title": "机器人上麦",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/audio/put_mic.html",
+      "restricted": false,
+      "sha256": "179b56489fa738d1cd0b2aab39ee95d550009354f349a875fe6f957a4d426e0b"
+    },
+    {
+      "method": "PUT",
+      "path": "/channels/{channel_id}/pins/{message_id}",
+      "title": "添加精华消息",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/pins/put_pins_message.html",
+      "restricted": false,
+      "sha256": "2f3f90dd3e12d2e0bb311d72a1514d201939e177ad3af85bc4343059783891df"
+    },
+    {
+      "method": "PUT",
+      "path": "/channels/{channel_id}/roles/{role_id}/permissions",
+      "title": "修改子频道身份组权限",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/role-group/channel_permissions/put_channel_roles_permissions.html",
+      "restricted": false,
+      "sha256": "f096c0b2233d13a1a7662edb4f03d3df8503b5cd178ffa4590cee42fc5d3f5b1"
+    },
+    {
+      "method": "PUT",
+      "path": "/channels/{channel_id}/threads",
+      "title": "发表帖子",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/forum/put_thread.html",
+      "restricted": false,
+      "sha256": "79c5ae2867a4dd37a3568fc9ac21d571d737c15f33f63f7ca272dd539ce03dd8"
+    },
+    {
+      "method": "PUT",
+      "path": "/guilds/{guild_id}/members/{user_id}/roles/{role_id}",
+      "title": "创建频道身份组成员",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/role-group/put_guild_member_role.html",
+      "restricted": false,
+      "sha256": "6576dd3a7405dca429c239c85ea24e3f2d96a31b9e10a2eeecc0b458bd29aafc"
+    },
+    {
+      "method": "PUT",
+      "path": "/interactions/{interaction_id}",
+      "title": "互动事件响应",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/interactions_interaction_id.put.html",
+      "restricted": false,
+      "sha256": "e48983edfde6d898d28d0416461ca5d83470608979176d8d7a1af6001d90df1a"
+    },
+    {
+      "method": "PUT",
+      "path": "/v2/menu",
+      "title": "修改全局自定义菜单",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_menu.put.html",
+      "restricted": false,
+      "sha256": "902f4eb099c2f73eeb285f5d7c1fb853c18f42e35c315c4a062667e721bd8776"
+    },
+    {
+      "method": "PUT",
+      "path": "/v2/panels/{panel_id}",
+      "title": "修改指令面板",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_panels_panel_id.put.html",
+      "restricted": false,
+      "sha256": "c8e75c45c364a4a443b46f21e8a52e22e7ce08e9adb51d0fd2365c6cd89a2bce"
+    },
+    {
+      "method": "PUT",
+      "path": "/v2/panels/{panel_id}/target",
+      "title": "修改指令面板关联对象",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_panels_panel_id_target.put.html",
+      "restricted": false,
+      "sha256": "8e1f30e0d45aaa8b120d7aa9a4bc8417b8bd5f67a234723e0542cf4a888d3a0f"
+    }
+  ],
+  "events": [
+    {
+      "name": "AT_MESSAGE_CREATE",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/interface-framework/event-emit.html"
+    },
+    {
+      "name": "AUDIO_FINISH",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/interface-framework/event-emit.html"
+    },
+    {
+      "name": "AUDIO_OFF_MIC",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/interface-framework/event-emit.html"
+    },
+    {
+      "name": "AUDIO_ON_MIC",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/interface-framework/event-emit.html"
+    },
+    {
+      "name": "AUDIO_OR_LIVE_CHANNEL_MEMBER_ENTER",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/role/audio_or_live_channel_member.html"
+    },
+    {
+      "name": "AUDIO_OR_LIVE_CHANNEL_MEMBER_EXIT",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/role/audio_or_live_channel_member.html"
+    },
+    {
+      "name": "AUDIO_START",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/interface-framework/event-emit.html"
+    },
+    {
+      "name": "C2C_MESSAGE_CREATE",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/c2c_message_create.html"
+    },
+    {
+      "name": "C2C_MSG_RECEIVE",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/c2c_msg_receive.html"
+    },
+    {
+      "name": "C2C_MSG_REJECT",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/c2c_msg_reject.html"
+    },
+    {
+      "name": "CHANNEL_CREATE",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/channel_create.html"
+    },
+    {
+      "name": "CHANNEL_DELETE",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/channel_delete.html"
+    },
+    {
+      "name": "CHANNEL_UPDATE",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/channel_update.html"
+    },
+    {
+      "name": "DIRECT_MESSAGE_CREATE",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/interface-framework/event-emit.html"
+    },
+    {
+      "name": "DIRECT_MESSAGE_DELETE",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/interface-framework/event-emit.html"
+    },
+    {
+      "name": "FORUM_POST_CREATE",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/interface-framework/event-emit.html"
+    },
+    {
+      "name": "FORUM_POST_DELETE",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/interface-framework/event-emit.html"
+    },
+    {
+      "name": "FORUM_PUBLISH_AUDIT_RESULT",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/interface-framework/event-emit.html"
+    },
+    {
+      "name": "FORUM_REPLY_CREATE",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/interface-framework/event-emit.html"
+    },
+    {
+      "name": "FORUM_REPLY_DELETE",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/interface-framework/event-emit.html"
+    },
+    {
+      "name": "FORUM_THREAD_CREATE",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/interface-framework/event-emit.html"
+    },
+    {
+      "name": "FORUM_THREAD_DELETE",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/interface-framework/event-emit.html"
+    },
+    {
+      "name": "FORUM_THREAD_UPDATE",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/interface-framework/event-emit.html"
+    },
+    {
+      "name": "FRIEND_ADD",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/friend_add.html"
+    },
+    {
+      "name": "FRIEND_DEL",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/friend_del.html"
+    },
+    {
+      "name": "GROUP_ADD_ROBOT",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/group_add_robot.html"
+    },
+    {
+      "name": "GROUP_AT_MESSAGE_CREATE",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/group_at_message_create.html"
+    },
+    {
+      "name": "GROUP_DEL_ROBOT",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/group_del_robot.html"
+    },
+    {
+      "name": "GROUP_JOIN_REQUEST",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/group_join_request.html"
+    },
+    {
+      "name": "GROUP_MEMBER_ADD",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/group_member_add.html"
+    },
+    {
+      "name": "GROUP_MEMBER_REMOVE",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/group_member_remove.html"
+    },
+    {
+      "name": "GROUP_MESSAGE_CREATE",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/group_message_create.html"
+    },
+    {
+      "name": "GROUP_MSG_RECEIVE",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/group_msg_receive.html"
+    },
+    {
+      "name": "GROUP_MSG_REJECT",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/group_msg_reject.html"
+    },
+    {
+      "name": "GUILD_CREATE",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/guild_create.html"
+    },
+    {
+      "name": "GUILD_DELETE",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/guild_delete.html"
+    },
+    {
+      "name": "GUILD_MEMBER_ADD",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/role/guild_member.html"
+    },
+    {
+      "name": "GUILD_MEMBER_REMOVE",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/role/guild_member.html"
+    },
+    {
+      "name": "GUILD_MEMBER_UPDATE",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/role/guild_member.html"
+    },
+    {
+      "name": "GUILD_UPDATE",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/guild_update.html"
+    },
+    {
+      "name": "INTERACTION_CREATE",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/interaction_create.html"
+    },
+    {
+      "name": "MESSAGE_AUDIT_PASS",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/interface-framework/event-emit.html"
+    },
+    {
+      "name": "MESSAGE_AUDIT_REJECT",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/interface-framework/event-emit.html"
+    },
+    {
+      "name": "MESSAGE_CREATE",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/interface-framework/event-emit.html"
+    },
+    {
+      "name": "MESSAGE_DELETE",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/interface-framework/event-emit.html"
+    },
+    {
+      "name": "MESSAGE_REACTION_ADD",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/interface-framework/event-emit.html"
+    },
+    {
+      "name": "MESSAGE_REACTION_REMOVE",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/interface-framework/event-emit.html"
+    },
+    {
+      "name": "PUBLIC_MESSAGE_DELETE",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/interface-framework/event-emit.html"
+    },
+    {
+      "name": "SUBSCRIBE_MESSAGE_STATUS",
+      "documentation": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/subscribe_message_status.html"
+    }
+  ]
+}

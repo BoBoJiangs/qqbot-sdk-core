@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.github.BoBoJiangs</groupId>
+    <artifactId>qqbot-sdk-core</artifactId>
+    <version>0.1.0</version>
+    <name>QQ Bot Java SDK</name>
+    <description>Framework-independent Java 17 client for the QQ Bot Open Platform</description>
+    <url>https://github.com/BoBoJiangs/qqbot-sdk-core</url>
+    <scm>
+        <connection>scm:git:https://github.com/BoBoJiangs/qqbot-sdk-core.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/BoBoJiangs/qqbot-sdk-core.git</developerConnection>
+        <url>https://github.com/BoBoJiangs/qqbot-sdk-core</url>
+        <tag>0.1.0</tag>
+    </scm>
+    <developers>
+        <developer><id>BoBoJiangs</id><name>BoBoJiangs</name><url>https://github.com/BoBoJiangs</url></developer>
+    </developers>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.release>17</maven.compiler.release>
+        <fastjson2.version>2.0.66</fastjson2.version>
+        <slf4j.version>2.0.20</slf4j.version>
+        <junit.version>6.0.3</junit.version>
+        <mockito.version>5.23.0</mockito.version>
+        <logback.version>1.5.38</logback.version>
+    </properties>
+    <dependencies>
+        <dependency><groupId>com.alibaba.fastjson2</groupId><artifactId>fastjson2</artifactId><version>${fastjson2.version}</version></dependency>
+        <dependency><groupId>org.slf4j</groupId><artifactId>slf4j-api</artifactId><version>${slf4j.version}</version></dependency>
+        <dependency><groupId>org.junit.jupiter</groupId><artifactId>junit-jupiter</artifactId><version>${junit.version}</version><scope>test</scope></dependency>
+        <dependency><groupId>org.mockito</groupId><artifactId>mockito-junit-jupiter</artifactId><version>${mockito.version}</version><scope>test</scope></dependency>
+        <dependency><groupId>ch.qos.logback</groupId><artifactId>logback-classic</artifactId><version>${logback.version}</version><scope>test</scope></dependency>
+    </dependencies>
+    <build>
+        <resources><resource><directory>spec</directory><targetPath>META-INF/qqbot</targetPath></resource></resources>
+        <plugins>
+            <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-clean-plugin</artifactId><version>3.5.0</version></plugin>
+            <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-resources-plugin</artifactId><version>3.5.0</version></plugin>
+            <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-compiler-plugin</artifactId><version>3.15.0</version></plugin>
+            <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-surefire-plugin</artifactId><version>3.5.6</version></plugin>
+            <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-jar-plugin</artifactId><version>3.5.1</version></plugin>
+            <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-install-plugin</artifactId><version>3.1.4</version></plugin>
+            <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-dependency-plugin</artifactId><version>3.10.0</version></plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId><artifactId>maven-source-plugin</artifactId><version>3.4.0</version>
+                <executions><execution><id>sources</id><goals><goal>jar-no-fork</goal></goals></execution></executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId><artifactId>maven-javadoc-plugin</artifactId><version>3.12.0</version>
+                <configuration><release>17</release><doclint>all,-missing</doclint><quiet>true</quiet></configuration>
+                <executions><execution><id>javadoc</id><goals><goal>jar</goal></goals></execution></executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

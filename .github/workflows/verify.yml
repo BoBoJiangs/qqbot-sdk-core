@@ -1,0 +1,26 @@
+name: Verify SDK
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        java: ['17', '21']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: ${{ matrix.java }}
+          cache: maven
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -B scripts/sync_qq_sdk_catalog.py --check
+      - run: python -B -m unittest discover -s tests
+      - run: mvn -B -ntp clean verify dependency:build-classpath -Dmdep.includeScope=runtime -Dmdep.outputFile=target/classpath.txt
+      - run: python -B scripts/verify_release.py
